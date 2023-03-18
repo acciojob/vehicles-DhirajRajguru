@@ -9,7 +9,7 @@ public class F1 extends Car {
     public F1(String name, boolean isManual)
     {
 
-        super(name , 4 ,4 , 5 ,isManual ,name ,2);
+        super(name , 4 ,2 , 6 ,isManual ,name ,1);
         //Use arbitrary values for parameters which are not mentioned
     }
 
