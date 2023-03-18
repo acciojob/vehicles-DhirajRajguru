@@ -3,7 +3,30 @@ package com.driver;
 
 
 public class Car extends Vehicle {
+
+    private String type;
+    private int doors;
+    private int gears;
+    private boolean isManual;
+    private int currentGear;
+    private int seats;
+
     private int wheels;
+
+
+    public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats)
+    {
+        //Hint: Car extends Vehicle
+        super(name);
+        this.wheels=wheels;
+        this.gears=gears;
+        this.isManual=isManual;
+        this.type=type;
+        this.seats=seats;
+        currentGear=1;
+
+    }
+
 
     public int getWheels() {
         return wheels;
@@ -61,26 +84,6 @@ public class Car extends Vehicle {
         this.seats = seats;
     }
 
-    private String type;
-    private int doors;
-    private int gears;
-    private boolean isManual;
-    private int currentGear;
-    private int seats;
-
-
-    public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats)
-    {
-        //Hint: Car extends Vehicle
-        super(name);
-        this.wheels=wheels;
-        this.gears=gears;
-        this.isManual=isManual;
-        this.type=type;
-        this.seats=seats;
-        currentGear=1;
-
-    }
 
     public void changeGear(int newGear)
     {
