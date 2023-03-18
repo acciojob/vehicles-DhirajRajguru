@@ -27,6 +27,7 @@ public class F1 extends Car {
          * speed 151-200: gear 4
          * speed 201-250: gear 5
          * speed more than 250: gear 6
+         * comment tst
          */
 
         if(newSpeed == 0) {
